@@ -49,14 +49,22 @@
         }
       }
 
-      // &__logo {
-      //   &--2 {
-      //     display: inline-block;
-      //   }
-      //   &--1 {
-      //     display: none;
-      //   }
-      // }
+      &__logo {
+        &--2 {
+          display: inline-block;
+        }
+        &--1 {
+          display: none;
+        }
+
+        img {
+          width: 15rem;
+        }
+      }
+
+      &__content {
+        padding: 2rem 0;
+      }
     }
   }
 
@@ -89,18 +97,19 @@
       order: 2;
     }
 
-    // &--2 {
-    //   display: none;
-    //   @media only screen and (max-width: $bp-992) {
-    //     display: inline-block;
-    //   }
-    // }
+    &--2 {
+      display: none;
+      @media only screen and (max-width: $bp-992) {
+        display: inline-block;
+      }
+    }
 
-    // &--1 {
-    //   @media only screen and (max-width: $bp-992) {
-    //     display: none;
-    //   }
-    // }
+    &--1 {
+      display: inline-block;
+      @media only screen and (max-width: $bp-992) {
+        display: none;
+      }
+    }
   }
 
   &__list {

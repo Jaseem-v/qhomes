@@ -108,36 +108,36 @@ $(window).scroll(function () {
 //////////////////////////////////////////
 // enroll btn
 
-let enrollBtn = document.querySelector("#enroll-btn")
-let model = document.querySelector(".enroll")
-let modelContainer = document.querySelector(".enroll__container")
-let modelOverlay = document.querySelector(".enroll__overlay")
-let modelClose = document.querySelector(".model-close");
+// let enrollBtn = document.querySelector("#enroll-btn")
+// let model = document.querySelector(".enroll")
+// let modelContainer = document.querySelector(".enroll__container")
+// let modelOverlay = document.querySelector(".enroll__overlay")
+// let modelClose = document.querySelector(".model-close");
 
 
-function modelCloseFunction() {
-    document.body.classList.remove("remove-scrolling");
-    modelContainer.classList.remove("active")
-    setTimeout(() => {
-        modelOverlay.classList.remove("active")
-    }, 200)
-    setTimeout(() => {
-        model.classList.remove("active")
-    }, 500)
-}
+// function modelCloseFunction() {
+//     document.body.classList.remove("remove-scrolling");
+//     modelContainer.classList.remove("active")
+//     setTimeout(() => {
+//         modelOverlay.classList.remove("active")
+//     }, 200)
+//     setTimeout(() => {
+//         model.classList.remove("active")
+//     }, 500)
+// }
 
-modelClose.addEventListener("click", modelCloseFunction)
-modelOverlay.addEventListener("click", modelCloseFunction)
+// modelClose.addEventListener("click", modelCloseFunction)
+// modelOverlay.addEventListener("click", modelCloseFunction)
 
-enrollBtn.addEventListener("click", () => {
-    document.body.classList.add("remove-scrolling");
-    model.classList.add("active")
-    modelOverlay.classList.add("active")
+// enrollBtn.addEventListener("click", () => {
+//     document.body.classList.add("remove-scrolling");
+//     model.classList.add("active")
+//     modelOverlay.classList.add("active")
 
-    setTimeout(() => {
-        modelContainer.classList.add("active")
-    }, 200)
-})
+//     setTimeout(() => {
+//         modelContainer.classList.add("active")
+//     }, 200)
+// })
 
 /////////////////////////////////////
 // Hamburg menu

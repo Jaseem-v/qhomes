@@ -26,7 +26,7 @@
     </a>
     <main>
 
-        <div id="enroll" class="enroll">
+        <!-- <div id="enroll" class="enroll">
             <div class="enroll__overlay">
             </div>
 
@@ -37,42 +37,78 @@
                         <i class="fas fa-times-circle model-close"></i>
                     </div>
                 </div>
-                <form action="" class="enroll__form">
-                    <div class="enroll__form-group">
-                        <label for="Name" class="enroll__form-label">Name</label>
-                        <div class="enroll__form-input-box">
-                            <div class="enroll__form-input-icon">
-                                <i class="fas fa-user"></i>
+                <div class="pro-single">
+                    <div class="pro-single__content">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-12 col-xs-12">
+                                <div class="pro-single__imgs">
+                                    <img src="assets/img/products/p-1.jpg" alt="">
+                                    <img src="assets/img/products/p-6.jpg" alt="">
+                                </div>
                             </div>
-                            <input type="text" name="fname" id="fname" autocomplete="off" placeholder="Enter your Name"
-                                class="enroll__form-input" required>
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <div class="pro-single__text-part">
+                                    <h3 class="pro-single__title">Modern Reception</h3>
+                                    <p class="pro-single__paragraph paragraph">Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Ducimus, ab unde minus dolores voluptatem rem reprehenderit
+                                        quae officia quod quo mollitia ut doloremque architecto sint dicta nam illum
+                                        quibusdam aliquid.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="enroll__form-group">
-                        <label for="mobile" class="enroll__form-label">Mobile or Email </label>
-                        <div class="enroll__form-input-box">
-                            <div class="enroll__form-input-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <input type="text" name="mobile" id="mobile" autocomplete="off"
-                                placeholder="Enter Your Mobile Number / Email" class="enroll__form-input" required>
-                        </div>
-                    </div>
-                    <div class="enroll__form-group">
-                        <label for="comments" class="enroll__form-label">Comments</label>
-                        <div class="enroll__form-input-box">
-                            <div class="enroll__form-input-icon enroll__form-input-icon--comments">
-                                <i class="fas fa-comment-alt"></i>
-                            </div>
-                            <textarea name="comments" id="comments" class="enroll__form-input enroll__form-textarea"
-                                placeholder=" Comments"></textarea>
-                        </div>
-                    </div>
+                </div>
+            </div>
+        </div> -->
 
-                    <a href="#/" class="btn btn--enroll"> Submit <span></span></a>
+        <div class="popup" id="popup-1">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="assets/img/products/p-1.jpg" alt="Tour photo" class="popup__img">
+                    <img src="assets/img/products/p-6.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__left">
+                    <img src="assets/img/products/p-6.jpg" alt="Tour photo" class="popup__img">
+                    <img src="assets/img/products/p-7.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading__primary">Modern kitchen</h2>
+                    <p class="paragraph popup__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                    </p>
 
+                    <table>
+                        <tr>
+                            <td class="popup__title">location :</td>
+                            <td class="popup__title"> Calicut </td>
+                        </tr>
+                        <tr>
+                            <td class="popup__title">Object type :</td>
+                            <td class="popup__title"> Interior design </td>
+                        </tr>
+                        <tr>
+                            <td class="popup__title">Area :</td>
+                            <td class="popup__title"> 2 690.978 ft2 </td>
+                        </tr>
+                        <tr>
+                            <td class="popup__title">Term of works : </td>
+                            <td class="popup__title"> 2 months </td>
+                        </tr>
+                        <tr>
+                            <td class="popup__title"> Budget: </td>
+                            <td class="popup__title"> $450 / ft2 </td>
+                        </tr>
+                    </table>
 
-                </form>
+                    <!-- <h3 class="heading__subtitle popup__title">location : <span> Calicut </span></h3>
+                    <h3 class="heading__subtitle popup__title">Object type : <span> Interior design </span></h3>
+                    <h3 class="heading__subtitle popup__title">Area : <span> 2 690.978 ft2 </span></h3>
+                    <h3 class="heading__subtitle popup__title">Term of works : <span> 2 months </span></h3> -->
+
+                    <!-- <a href="#" class="btn btn--green">Book now</a> -->
+                </div>
             </div>
         </div>
         <!-- ---------nav-bar---------- -->
@@ -105,7 +141,7 @@
                         <div class="line"></div>
                     </div>
                 </ul>
-                <a href="#/" class="btn btn--nav" id="enroll-btn"> Enquiry Now<span></span></a>
+                <a href="" class="btn btn--nav" id="enroll-btn"> Enquiry Now<span></span></a>
 
 
             </div>
@@ -218,7 +254,7 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos maiores fuga,
                                         veniam, hic cum animi mollitia eum sit doloribus ...
                                     </p>
-                                    <a href="#/" class="btn__line">View Details</a>
+                                    <a href="#popup-1" class="btn__line">View Details</a>
                                 </div>
                             </div>
 
@@ -376,7 +412,7 @@
                                     <p class="paragraph">Provides an opportunity to not only add beauty and structure to
                                         the
                                         world, but to improve the conditions for people.</p>
-                                    <a href="#/" class="btn__line">View Details</a>
+                                    <!-- <a href="#/" class="btn__line">View Details</a> -->
 
                                 </div>
                             </div>
@@ -389,7 +425,7 @@
                                     <p class="paragraph">We combine creativity, passion, research and expertise in
                                         multiple
                                         areas to deliver interior spaces that empower occupants.</p>
-                                    <a href="#/" class="btn__line">View Details</a>
+                                    <!-- <a href="#/" class="btn__line">View Details</a> -->
 
                                 </div>
                             </div>
@@ -401,12 +437,12 @@
                                     <h3 class="services__title">FACILITY OPTIMIZATION</h3>
                                     <p class="paragraph">We can efficiently create a living dataset of your assets and
                                         integrate into your computerized maintenance management.</p>
-                                    <a href="#/" class="btn__line">View Details</a>
+                                    <!-- <a href="#/" class="btn__line">View Details</a> -->
 
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                             <div class="services__outer">
                                 <div class="services__single-item">
                                     <img src="assets/img/services/icon-2.svg" alt="" class="services__img">
@@ -414,7 +450,7 @@
                                     <p class="paragraph">Our team’s analytical tools and user engagement activities
                                         inspire
                                         creativity and collaboration that enhance any project.</p>
-                                    <a href="#/" class="btn__line">View Details</a>
+                                    <!-- <a href="#/" class="btn__line">View Details</a> -->
 
                                 </div>
                             </div>
@@ -427,7 +463,7 @@
                                     <p class="paragraph">We create innovative engineering systems that help
                                         organizations
                                         achieve bold business and performance goals.</p>
-                                    <a href="#/" class="btn__line">View Details</a>
+                                    <!-- <a href="#/" class="btn__line">View Details</a> -->
 
                                 </div>
                             </div>
@@ -440,11 +476,11 @@
                                     <p class="paragraph">Across our firm, we employ a diverse range of professionals
                                         with a
                                         successful record delivering high-quality projects.</p>
-                                    <a href="#/" class="btn__line">View Details</a>
+                                    <!-- <a href="#/" class="btn__line">View Details</a> -->
 
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
 
                     </div>
 
@@ -576,7 +612,7 @@
 
             </div>
 
-            <div class="contact__map">
+            <!-- <div class="contact__map">
                 <div class="">
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
@@ -594,7 +630,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
         </section>
         <!-- --contact-- -->
 

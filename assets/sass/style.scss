@@ -29,7 +29,7 @@
   cursor: pointer;
   width: 5rem;
   height: 5rem;
-  background-color: #c6d55b;
+  background-color: #82b440;
   display: none;
   -webkit-border-radius: 6rem;
   -moz-border-radius: 6rem;
@@ -337,121 +337,12 @@
   }
 }
 
-////////////////////////////////////
-// Methodology
-
-.methodology {
-  background-image: url("../img/methodology-2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
-
-  @media only screen and (max-width: $bp-xsmall) {
-    background: #e4e4e4;
-  }
-
-  &__conatiner {
-    display: grid;
-    margin-top: 5rem;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 30px;
-    justify-items: center;
-
-    @media only screen and (max-width: $bp-largest) {
-      grid-template-columns: repeat(6, 1fr);
-    }
-    @media only screen and (max-width: $bp-xsmall) {
-      // font-size: 48.75%;
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
-  &__single-item {
-    background: #79afb4;
-    padding: 6.5rem 3rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    text-transform: capitalize;
-    text-align: center;
-    color: #fff;
-    transition: all 0.25s ease-in-out;
-    border-radius: 7px;
-
-    &:hover {
-      transform: translateY(-6px);
-      box-shadow: 10px 10px 40px 1px rgb(85 85 85 / 20%), -10px 9px 40px 1px rgb(85 85 85 / 20%);
-    }
-
-    &--1 {
-      grid-column: 1/3;
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-column: 1/3;
-      }
-    }
-
-    &--2 {
-      background: #8092b1;
-      grid-column: 3/5;
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-column: 3/5;
-      }
-    }
-    &--3 {
-      background: #8c7ca3;
-      grid-column: 5/7;
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-column: 1/3;
-      }
-    }
-    &--4 {
-      background: #bc85a4;
-      grid-column: 7/9;
-
-      @media only screen and (max-width: $bp-largest) {
-        grid-column: 2/4;
-      }
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-column: 3/5;
-      }
-    }
-    &--5 {
-      background: #d18979;
-      grid-column: 9/11;
-
-      @media only screen and (max-width: $bp-largest) {
-        grid-column: 4/6;
-      }
-
-      @media only screen and (max-width: $bp-xsmall) {
-        grid-column: 1/5;
-      }
-    }
-  }
-
-  &__title {
-    font-size: 1.8rem;
-  }
-
-  &__letter {
-    font-size: 5rem;
-    display: block;
-    // text-align: left;
-    // width: 80%;
-    font-weight: 900;
-  }
-}
-
 ///////////////////////////////////////
 // About
 
 .about {
   &__tag {
-    color: #c6d55b;
+    color: #82b440;
     font-size: 1.6rem;
 
     margin-bottom: 0.5rem;
@@ -478,154 +369,62 @@
   }
 }
 
-////////////////////////////
-// Brands
+/////////////////////////////////////
+// services
 
-.brands {
-  // background: #f7f8f9;
-  background-image: url("../img/trust.jpg");
-  background-position: center;
+.services {
+  position: relative;
+  padding: 100px 0 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
-  @media only screen and (max-width: $bp-xsmall) {
-    background: #ede8e4;
-  }
-  &__single-item {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__img {
-    width: 80%;
-  }
-}
-
-///////////////////////////////////
-// Reviews
-
-.review {
-  &__swiper {
-    position: relative;
-  }
-
-  &__single-items {
-    padding: 2.5rem;
-    border: 1px solid #e9ecef !important;
-  }
-  &__user {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-
-    &-name {
-      // margin-bottom: 0.5rem;
-      font-size: 1.55rem;
-      margin: 0;
-      line-height: 8px;
-      font-weight: 500;
-      text-transform: capitalize;
-    }
-
-    &-job {
-      font-size: 1.3rem;
-      line-height: 1;
-      margin-top: 1rem;
-    }
-  }
-
-  &__img {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
-    margin-right: 1rem;
-  }
-
-  &__company-img {
-    width: 6rem;
-    height: auto;
-    border-radius: 50%;
-    margin-left: auto;
-  }
-  &__rating {
-    padding: 4px 5px;
-    background: #ff9800;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 1.3rem;
-    border-radius: 3px;
-    width: auto;
-    margin-bottom: 0;
-  }
-}
-
-.swiper-container {
-  overflow: hidden;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 60%;
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  padding: 0;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: 0;
-  background: 0 0;
-  background-color: #c6d55b;
-  border-radius: 50%;
-  &:hover {
-    background: #4db0c2;
-  }
-
-  &::after {
-    display: inline-flex;
-    align-items: center;
-    background: transparent;
-    justify-content: center;
-    color: #fff;
-    border-radius: 50%;
-    content: "\203A";
+  background-image: url(../img/services_bg.jpg);
+  &::before {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.3rem;
-    font-weight: 900;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    // display: block;
+    background-color: rgba(#4db0c2, 0.9);
+    z-index: 0;
+  }
+
+  &__section-inner {
+    z-index: 1;
+    position: relative;
+    bottom: -100px;
+    margin-top: -100px;
+  }
+
+  &__outer {
+    padding: 2.5rem 1.5rem;
+  }
+
+  &__single-item {
+    padding: 4.5rem 4.5rem;
+    background-color: #f1ede8;
+    z-index: 2;
+  }
+
+  &__img {
+    max-width: 8rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: #34322d;
+    font-weight: 600;
+    margin-bottom: 15px;
   }
 }
-
-.swiper-button-prev {
-  left: -3%;
-  &::after {
-    content: "\2039";
-  }
-}
-
-.swiper-button-next {
-  right: -3%;
-}
-
 //////////////////////////////////////
 // Contact
 
 .contact {
   padding-bottom: 0;
+  padding-top: 130px;
   &__left-part {
     margin-right: 3rem;
     @media only screen and (max-width: $bp-992) {
@@ -694,7 +493,7 @@
       padding: 1.5rem !important;
 
       i {
-        color: #c6d55b;
+        color: #82b440;
         font-size: 1.8rem;
       }
     }

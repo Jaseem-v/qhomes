@@ -40,11 +40,11 @@
         color: #30384e;
 
         &:hover {
-          color: #82b440;
+          color:   #82b440;
         }
 
         &.active {
-          color: #82b440;
+          color:   #82b440;
           // font-weight: 500;
         }
       }
@@ -173,7 +173,7 @@
       width: 100%;
       padding: 3rem 0;
       &:not(:last-child) {
-        border-bottom: 1px solid rgba(#82b440, 0.2);
+        border-bottom: 1px solid rgba(  #82b440, 0.2);
       }
     }
   }
@@ -183,11 +183,11 @@
     font-weight: 500;
     color: #fff;
     &:hover {
-      color: #82b440;
+      color:   #82b440;
     }
 
     &.active {
-      color: #82b440;
+      color:   #82b440;
       font-weight: 500;
     }
 

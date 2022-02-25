@@ -86,25 +86,46 @@ $(window).on('scroll', function () {
 });
 ///////////////////////////////
 
-$(window).scroll(function () {
-    var windscroll = $(window).scrollTop();
-    if (windscroll >= 100) {
-        $('section').each(function (i) {
-            // The number at the end of the next line is how pany pixels you from the top you want it to activate.
-            if ($(this).position().top <= windscroll - -1500) {
-                $('.navigation__link.active').removeClass('active');
-                $('.navigation__link').eq(i).addClass('active');
+// $(window).scroll(function () {
+//     var windscroll = $(window).scrollTop();
+//     if (windscroll >= 100) {
+//         $('section').each(function (i) {
+//             // The number at the end of the next line is how pany pixels you from the top you want it to activate.
+//             if ($(this).position().top <= windscroll - -1500) {
+//                 $('.navigation__link.active').removeClass('active');
+//                 $('.navigation__link').eq(i).addClass('active');
 
-            }
-        });
+//             }
+//         });
 
-    } else {
+//     } else {
 
-        $('.navigation__link.active').removeClass('active');
-        $('.navigation__link:first').addClass('active');
-    }
+//         $('.navigation__link.active').removeClass('active');
+//         $('.navigation__link:first').addClass('active');
+//     }
 
-}).scroll();
+// }).scroll();
+
+let sections = document.querySelectorAll("section")
+let navLi = document.querySelectorAll(".navigation__link")
+
+window.onscroll = () => {
+    var current = "";
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLi.forEach((li) => {
+        li.classList.remove("active");
+        if (li.href.includes(current)) {
+            li.classList.add('active');
+        }
+    });
+};
 
 //////////////////////////////////////////
 // enroll btn

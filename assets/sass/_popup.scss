@@ -37,14 +37,16 @@ $color-black: #000;
     }
 
     &__row {
-        @media only screen and (max-width: $bp-xsmall) {
+        @media only screen and (max-width: $bp-992) {
             flex-direction: column-reverse;
         }
     }
 
     &__img-part {
         // width: 33.333333%;
-        display: table-cell;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         padding: 0;
 
         &--2 {
@@ -56,10 +58,14 @@ $color-black: #000;
 
     &__right {
         // width: 66.6666667%;
-        display: table-cell;
-        vertical-align: middle;
+        // display: table-cell;
+        // vertical-align: middle;
         padding: 3rem;
         padding-left: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     &__img {

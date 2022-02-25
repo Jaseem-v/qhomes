@@ -12,7 +12,7 @@
     align-items: center;
 
     &.active {
-        z-index: 40;
+        z-index: 140;
     }
 
     &__overlay {
@@ -32,9 +32,8 @@
 
     &__container {
         min-width: 30rem;
-        // max-width: 50rem;
-        width: 80%;
-        height: 80%;
+        max-width: 50rem;
+        width: 50rem;
         background: #fff;
         // height: 50vh;
         margin: 5rem auto;

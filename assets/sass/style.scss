@@ -292,36 +292,42 @@
           bottom: 0;
         }
 
-        &__img-container {
-          img {
-            -webkit-filter: none;
-            filter: none;
-            -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-            -webkit-filter: brightness(70%);
-            -webkit-transition: all 1s ease;
-            -moz-transition: all 1s ease;
-            -o-transition: all 1s ease;
-            -ms-transition: all 1s ease;
-            transition: all 1s ease;
-          }
+        // &__img-container {
+         
+        // }
+        &__img {
+          -webkit-filter: none;
+          filter: none;
+          -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+          -webkit-filter: brightness(70%);
+          -webkit-transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -o-transition: all 1s ease;
+          -ms-transition: all 1s ease;
+          transition: all 1s ease;
         }
       }
     }
   }
 
   &__img-container {
-    img {
-      // margin-bottom: 1.5rem;
-      width: 100%;
-      height: 100%;
-      transition: all 0.5s;
-      position: relative;
-      z-index: 1;
-      border-radius: 0px;
-    }
-  }
 
+    height: 50vh;
+  }
+  
+  &__img {
+    // margin-bottom: 1.5rem;
+    // background-image: url("../img/houses/1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+    border-radius: 0px;
+  }
   &__info {
     padding: 3rem 1.5rem;
     position: absolute;

@@ -13,6 +13,7 @@
   -o-transition: all 0.4s;
   transition: all 0.4s;
   z-index: 3;
+
   // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   @media only screen and (max-width: $bp-992) {
     padding: 0rem 1.5rem;
@@ -53,6 +54,7 @@
         &--2 {
           display: inline-block;
         }
+
         &--1 {
           display: none;
         }
@@ -85,6 +87,7 @@
       padding: 2rem 0;
     }
   }
+
   &__logo {
     cursor: pointer;
     position: relative;
@@ -93,13 +96,20 @@
     img {
       width: 10rem;
       border-radius: 0px;
+
+      @media only screen and (max-width: $bp-xsmall) {
+        width: 15rem;
+
+      }
     }
+
     @media only screen and (max-width: $bp-992) {
       order: 2;
     }
 
     &--2 {
       display: none;
+
       @media only screen and (max-width: $bp-992) {
         display: inline-block;
       }
@@ -107,6 +117,7 @@
 
     &--1 {
       display: inline-block;
+
       @media only screen and (max-width: $bp-992) {
         display: none;
       }
@@ -121,6 +132,7 @@
     justify-content: center;
     // padding: 1rem 0;
     margin-left: auto;
+
     @media only screen and (max-width: $bp-992) {
       order: 2;
       position: fixed;
@@ -173,6 +185,7 @@
       // margin-top: 1.5rem;
       width: 100%;
       padding: 3rem 0;
+
       &:not(:last-child) {
         border-bottom: 1px solid rgba(#82b440, 0.2);
       }
@@ -183,6 +196,7 @@
     font-size: 1.55rem;
     font-weight: 500;
     color: #fff;
+
     &:hover {
       color: #82b440;
     }
@@ -218,6 +232,7 @@
     }
 
     .hamburger {
+
       // overflow: hidden;
       // height: 1px;
       // background: #fff;
@@ -233,22 +248,26 @@
         transition: all 0.3s ease-in-out;
         margin: 05px auto;
       }
+
       &:hover {
         cursor: pointer;
       }
     }
+
     #hamburger-1 {
       &.active {
         .line {
           &:nth-child(2) {
             opacity: 0;
           }
+
           &:nth-child(1) {
             -webkit-transform: translateY(6px) rotate(45deg);
             -ms-transform: translateY(6px) rotate(45deg);
             -o-transform: translateY(6px) rotate(45deg);
             transform: translateY(6px) rotate(45deg);
           }
+
           &:nth-child(3) {
             -webkit-transform: translateY(-9px) rotate(-45deg);
             -ms-transform: translateY(-9px) rotate(-45deg);
@@ -260,6 +279,7 @@
     }
   }
 }
+
 .hidden {
   display: none;
   height: auto;
@@ -305,18 +325,22 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     margin: 05px auto;
+
     &:hover {
       cursor: pointer;
     }
+
     &:nth-child(2) {
       opacity: 0;
     }
+
     &:nth-child(1) {
       -webkit-transform: translateY(6px) rotate(45deg);
       -ms-transform: translateY(6px) rotate(45deg);
       -o-transform: translateY(6px) rotate(45deg);
       transform: translateY(6px) rotate(45deg);
     }
+
     &:nth-child(3) {
       -webkit-transform: translateY(-9px) rotate(-45deg);
       -ms-transform: translateY(-9px) rotate(-45deg);

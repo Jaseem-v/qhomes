@@ -10,7 +10,6 @@
 
 a {
   text-decoration: none;
-
   &:hover {
     color: currentColor;
   }
@@ -25,7 +24,7 @@ ol {
 
 body {
   // font-family: "Jost", sans-serif;
-  font-family: "Mada", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   // overflow: hidden;
 }
@@ -42,7 +41,6 @@ main {
 :root {
   --responsive-font: 1.83rem;
 }
-
 /* ---------const------------*/
 
 $bp-xlarge: 112.5em; //1800px
@@ -61,27 +59,21 @@ html {
   @media only screen and (max-width: $bp-largest) {
     font-size: 56.25%;
   }
-
   @media only screen and (max-width: $bp-small) {
     font-size: 50%;
   }
-
   @media only screen and (max-width: $bp-xsmall) {
     // font-size: 48.75%;
   }
-
   @media only screen and (max-width: $bp-380) {
     font-size: 44%;
   }
-
   @media only screen and (max-width: $bp-340) {
     font-size: 42%;
   }
-
   @media only screen and (max-width: $bp-290) {
     font-size: 35%;
   }
-
   @media only screen and (min-width: $bp-xlarge) {
     font-size: 75%;
   }
@@ -93,7 +85,7 @@ html {
 
 .btn {
   // background:   #82b440;
-  background: #82b440;
+  background:  #82b440;
   // box-shadow: 0px 7px 10px #58bdff3d;
   border-radius: 6px;
   font-size: 1.4rem;
@@ -122,17 +114,16 @@ html {
   }
 
   &__line {
-    color: #82b440;
+    color:  #82b440;
     font-size: 1.5rem;
     text-transform: capitalize;
     font-weight: 500;
     letter-spacing: 0.3px;
     position: relative;
     padding-bottom: 3px;
-
     &::before {
       content: "";
-      background: #82b440;
+      background:  #82b440;
       height: 1px;
       width: 100%;
       position: absolute;
@@ -141,10 +132,9 @@ html {
     }
 
     &:hover {
-      color: #1CBCD8;
-
+      color:#1CBCD8;
       &::before {
-        background: #1CBCD8;
+        background:#1CBCD8;
       }
     }
   }
@@ -180,7 +170,7 @@ html {
     padding: 1rem 2.4rem;
     box-shadow: none;
     margin-top: 1rem;
-    background: #82b440;
+    background:  #82b440;
     border: none;
   }
 
@@ -188,7 +178,6 @@ html {
     padding: 1.2rem 2.6rem;
     margin-top: 1rem;
   }
-
   @media only screen and (max-width: $bp-992) {
     &--nav {
       // display: none;
@@ -214,7 +203,7 @@ html {
   }
 
   &__primary {
-    color: #1CBCD8;
+    color:#1CBCD8;
     font-size: 2.8rem;
     font-weight: 600;
     letter-spacing: 0px;
@@ -255,7 +244,6 @@ html {
 
   &--about-page {
     margin-bottom: 2rem;
-
     @media only screen and (max-width: $bp-small) {
       margin-bottom: 0rem;
     }
@@ -287,11 +275,9 @@ html {
   &--features {
     color: #fff;
   }
-
   &--footer {
     color: #fff;
     line-height: 1.954;
-
     &:last-child {
       margin-bottom: 0;
     }
@@ -300,7 +286,6 @@ html {
   &--icon {
     position: relative;
     padding-left: 3rem;
-
     i {
       position: absolute;
       top: 5.5px;
@@ -342,7 +327,6 @@ html {
   -webkit-animation: moveLeft 0.65s ease forwards;
   animation: moveLeft 0.65s ease forwards;
 }
-
 .move-right.animate {
   -webkit-transform: translateX(100px);
   -ms-transform: translateX(100px);
@@ -370,7 +354,6 @@ html {
   0% {
     margin-top: -100px;
   }
-
   to {
     margin-top: 0;
   }
@@ -380,7 +363,6 @@ html {
   0% {
     margin-top: -100px;
   }
-
   to {
     margin-top: 0;
   }
@@ -452,7 +434,6 @@ html {
       animation-name: fadeInDown;
       animation-delay: 0.3s;
     }
-
     p {
       -webkit-animation-duration: 1s;
       animation-duration: 1s;
@@ -461,7 +442,6 @@ html {
       animation-name: fadeInDown;
       animation-delay: 0.3s;
     }
-
     .btn {
       -webkit-animation-duration: 1s;
       animation-duration: 1s;
@@ -472,7 +452,6 @@ html {
     }
   }
 }
-
 .owl-nav {
   .owl-prev {
     position: absolute;
@@ -489,21 +468,17 @@ html {
     display: block;
     z-index: 1000;
     border-radius: 0;
-
     span {
       font-size: 1.6875rem;
       color: #fff;
     }
-
     &:focus {
       outline: 0;
     }
-
     &:hover {
       background: #000 !important;
     }
   }
-
   .owl-next {
     position: absolute;
     right: 15px;
@@ -519,16 +494,13 @@ html {
     display: block;
     z-index: 1000;
     border-radius: 0;
-
     span {
       font-size: 1.6875rem;
       color: #fff;
     }
-
     &:focus {
       outline: 0;
     }
-
     &:hover {
       background: #000 !important;
     }
@@ -546,12 +518,11 @@ html {
   }
 
   &__link {
-
     &:link,
     &:visited {
       font-size: 2rem;
-      color: #82b440;
-      border-bottom: 1px solid #82b440;
+      color:  #82b440;
+      border-bottom: 1px solid  #82b440;
       padding: 3px;
       transition: all 0.2s;
       font-weight: 500;
@@ -559,13 +530,13 @@ html {
     }
 
     &:hover {
-      background: #82b440;
+      background:  #82b440;
       color: #fff;
       padding: 3px 1.5rem;
       border-radius: 5px;
       box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.15);
       transform: translateY(-3px);
-      border-bottom: 1px solid #82b440;
+      border-bottom: 1px solid  #82b440;
     }
   }
 }

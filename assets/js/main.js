@@ -106,27 +106,6 @@ $(window).on('scroll', function () {
 
 // }).scroll();
 
-let sections = document.querySelectorAll("section")
-let navLi = document.querySelectorAll(".navigation__link")
-
-window.onscroll = () => {
-    var current = "";
-
-    sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop + -150) {
-            current = section.getAttribute("id");
-        }
-    });
-
-    navLi.forEach((li) => {
-        li.classList.remove("active");
-        if (li.href.includes(current)) {
-            li.classList.add('active');
-        }
-    });
-};
-
 //////////////////////////////////////////
 // enroll btn
 

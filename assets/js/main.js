@@ -228,3 +228,12 @@ $(document).ready(function () {
         return false;
     });
 });
+
+// //////////////////
+//GALLERY
+$('.projects__btn').magnificPopup({
+    type: 'image',
+    gallery: {
+        enabled: true
+    }
+})

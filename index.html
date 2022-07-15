@@ -738,6 +738,17 @@
                         }
                     });
                 }
+                if (window.pageYOffset < 50) {
+                    navLi.forEach((li) => {
+                        li.classList.remove("active");
+
+                        // if (li.href.includes(current)) {
+                        //     li.classList.add('active');
+                        // }
+                    });
+
+                    navLi[0].classList.add("active");
+                }
             });
 
 

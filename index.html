@@ -730,15 +730,17 @@
                 const sectionTop = section.offsetTop;
                 if (window.pageYOffset >= sectionTop + -150) {
                     current = section.getAttribute("id");
+
+                    navLi.forEach((li) => {
+                        li.classList.remove("active");
+                        if (li.href.includes(current)) {
+                            li.classList.add('active');
+                        }
+                    });
                 }
             });
 
-            navLi.forEach((li) => {
-                li.classList.remove("active");
-                if (li.href.includes(current)) {
-                    li.classList.add('active');
-                }
-            });
+
         };
 
     </script>

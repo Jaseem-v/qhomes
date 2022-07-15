@@ -14,6 +14,7 @@
       left: 0px;
       opacity: 1;
     }
+
     .owl-next {
       right: 0px;
       opacity: 1;
@@ -47,6 +48,7 @@
     height: 6.4rem;
     bottom: 9rem;
   }
+
   &:hover {
     background-color: rgba($color: #37455f, $alpha: 0.7);
     opacity: 1;
@@ -104,6 +106,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+
   // height: 100vh;
   @media only screen and (max-width: $bp-992) {
     height: auto;
@@ -136,12 +139,14 @@
     text-align: start;
     align-self: stretch;
     padding: 28rem 0;
+
     @media only screen and (max-width: $bp-992) {
       height: auto;
       padding: 8rem 3rem;
       text-align: center;
       align-items: center;
     }
+
     @media only screen and (max-width: $bp-xsmall) {
       // align-items: center;
     }
@@ -156,6 +161,7 @@
       @media only screen and (max-width: $bp-small) {
         width: 67%;
       }
+
       @media only screen and (max-width: $bp-xsmall) {
         width: 100%;
       }
@@ -164,6 +170,7 @@
     @media only screen and (max-width: $bp-992) {
       padding: 0rem 0 0rem;
     }
+
     @media only screen and (max-width: $bp-xsmall) {
       padding: 0rem;
     }
@@ -208,16 +215,25 @@
   }
 }
 
-@media only screen and (max-height: 600px) {
-  .container {
+// @media only screen and (max-height: 600px) {
+//   .container {
+//   }
+// }
+
+
+
+
+.container {
+
+  @media screen and (orientation:landscape) and (min-device-width: 320px) and (max-device-width: 450px) {
     max-width: 608px;
   }
-}
 
-@media only screen and (min-width: $bp-xlarge) {
-  .container {
+  @media only screen and (min-width: $bp-xlarge) {
     max-width: 132rem;
   }
+
+
 }
 
 ////////////////////////////////////
@@ -225,6 +241,7 @@
 
 .vision {
   padding-top: 8rem;
+
   &__box {
     z-index: 2;
     // margin-top: -50px;
@@ -278,6 +295,7 @@
 // projects
 
 .projects {
+
   // background: rgba(#fafafa, 0.5);
   &__single-item {
     box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
@@ -286,6 +304,7 @@
     // padding: 10px;
     position: relative;
     overflow: hidden;
+
     &:hover {
       .projects {
         &__info {
@@ -293,7 +312,7 @@
         }
 
         // &__img-container {
-         
+
         // }
         &__img {
           -webkit-filter: none;
@@ -315,7 +334,7 @@
 
     height: 50vh;
   }
-  
+
   &__img {
     // margin-bottom: 1.5rem;
     // background-image: url("../img/houses/1.jpg");
@@ -328,6 +347,7 @@
     z-index: 1;
     border-radius: 0px;
   }
+
   &__info {
     padding: 3rem 1.5rem;
     position: absolute;
@@ -419,6 +439,7 @@
 
 .about {
   background: #f1f1f1;
+
   &__tag {
     color: #82b440;
     font-size: 1.6rem;
@@ -457,6 +478,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url(../img/services_bg.jpg);
+
   &::before {
     position: absolute;
     content: "";
@@ -501,18 +523,22 @@
     margin-bottom: 1rem;
   }
 }
+
 //////////////////////////////////////
 // Contact
 
 .contact {
+
   // padding-bottom: 0;
   // padding-top: 130px;
   &__left-part {
     margin-right: 3rem;
+
     @media only screen and (max-width: $bp-992) {
       margin-right: 0rem;
     }
   }
+
   &__title {
     font-weight: 600;
     text-transform: capitalize;
@@ -520,6 +546,7 @@
     line-height: 26px;
     font-size: 2.1rem;
   }
+
   &__sub-title {
     color: #3c4852;
     font-size: 15px;
@@ -527,6 +554,7 @@
 
   &__map {
     margin-top: 8rem;
+
     &-item {
       display: flex;
       justify-content: center;
@@ -539,6 +567,7 @@
     &-iframe {
       width: 100%;
       height: 100%;
+
       iframe {
         width: 100%;
         height: 60vh;
@@ -553,13 +582,16 @@
   &__detail {
     padding-left: 8rem;
     padding-top: 3rem;
+
     @media only screen and (max-width: $bp-992) {
       padding-left: 3rem;
     }
+
     @media only screen and (max-width: 767px) {
       padding-left: 0rem;
       padding-top: 5rem;
     }
+
     &-group {
       position: relative;
       padding-left: 8rem;
@@ -595,6 +627,7 @@
       color: #30384e;
     }
   }
+
   &__label {
     font-size: 1.5rem;
     font-weight: 600;
@@ -625,6 +658,7 @@
     background: transparent;
     border-bottom: 2px solid #c1c1c1;
     z-index: 4;
+
     @media only screen and (max-width: $bp-xsmall) {
       font-size: 1.8rem;
     }
@@ -633,6 +667,7 @@
       outline: none;
       border-bottom: 2px solid #55c57a;
     }
+
     &:focus:invalid {
       border-bottom: 2px solid #ff7730;
     }
@@ -666,6 +701,7 @@
     }
   }
 }
+
 @import "enroll";
 @import "popup";
 
@@ -697,10 +733,12 @@ main {
       text-align: center;
     }
   }
+
   &__social {
     display: flex;
     align-items: center;
     margin-right: 2rem;
+
     // @media only screen and (max-width: $bp-xsmall) {
     //   transform: translateX(-1.5rem);
     // }
@@ -727,6 +765,7 @@ main {
     font-size: 1.4rem;
     margin: 0;
     margin-bottom: 0;
+
     @media only screen and (max-width: $bp-xsmall) {
       font-size: 1.6rem;
       // max-width: 27rem;

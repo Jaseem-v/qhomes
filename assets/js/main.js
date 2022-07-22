@@ -216,3 +216,17 @@ $('.projects__btn').magnificPopup({
         enabled: true
     }
 })
+
+//////////////////////////
+// project
+
+const projectBtn = document.querySelectorAll(".projects__single-item")
+
+projectBtn.forEach((btn) => {
+    btn.addEventListener("click", (el) => {
+        let projectInfo = el.target.closest(".projects__outer");
+
+        console.log(projectInfo.style);
+        projectInfo.style.bottom = "-6rem"
+    })
+})

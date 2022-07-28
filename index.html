@@ -726,6 +726,8 @@
         window.onscroll = () => {
             var current = "";
 
+            console.log(window.pageYOffset);
+
             sections.forEach((section) => {
                 const sectionTop = section.offsetTop;
                 if (window.pageYOffset >= sectionTop + -150) {
@@ -738,7 +740,7 @@
                         }
                     });
                 }
-                if (window.pageYOffset < 150) {
+                if (window.pageYOffset < 700) {
                     navLi.forEach((li) => {
                         li.classList.remove("active");
                     });

@@ -738,13 +738,9 @@
                         }
                     });
                 }
-                if (window.pageYOffset < 50) {
+                if (window.pageYOffset < 150) {
                     navLi.forEach((li) => {
                         li.classList.remove("active");
-
-                        // if (li.href.includes(current)) {
-                        //     li.classList.add('active');
-                        // }
                     });
 
                     navLi[0].classList.add("active");

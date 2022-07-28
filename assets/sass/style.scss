@@ -368,12 +368,28 @@
     transition: all 0.3s ease;
     z-index: 2;
     color: #fff;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      position: relative;
+      bottom: 0;
+      padding: 1.5rem 2rem;
+      background: #82b440;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+    }
+
   }
 
   &__title {
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-weight: 700;
+    }
   }
 
   &__catogary {
@@ -381,11 +397,20 @@
     font-size: 1.4rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      margin-bottom: 0rem;
+      color: rgba(255, 255, 255, 0.74);
+    }
   }
 
   &__btn {
     color: #82b440;
     font-size: 20px;
+    
+    @media only screen and (max-width: $bp-xsmall) {
+      color: #fff;
+    }
   }
 
   // &__details {
@@ -545,6 +570,7 @@
 .contact {
 
   padding-bottom: 0;
+
   // padding-top: 130px;
   &__left-part {
     margin-right: 3rem;

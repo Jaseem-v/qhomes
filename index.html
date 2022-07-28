@@ -129,54 +129,18 @@
 
 
 
-        <div class="popup" id="popup-1">
+        <!-- <div class="popup" id="popup-1">
             <div class="popup__content ">
-                <!-- <div class="row popup__row"> -->
-
+ 
                 <div class="popup__img-part ">
                     <img src="assets/img/project-img/1.jpg" alt="Tour photo" class="popup__img">
-                    <!-- <img src="assets/img/products/p-6.jpg" alt="Tour photo" class="popup__img"> -->
-                    <!-- </div>
-                    <div class="popup__img-part popup__img-part--2 col-lg-4 col-md-6 col-sm-12"> -->
-                    <!-- <img src="assets/img/products/p-6.jpg" alt="Tour photo" class="popup__img"> -->
-                    <!-- <img src="assets/img/products/p-7.jpg" alt="Tour photo" class="popup__img"> -->
+            
                     <a href="#section-tours" class="popup__close">&times;</a>
 
                 </div>
-                <!-- <div class="popup__right col-lg-4 col-md-12 col-sm-12"> -->
-                <!-- <h2 class="heading__primary">Modern kitchen</h2>
-                        <p class="paragraph popup__paragraph">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                        </p> -->
-
-                <!-- <table>
-                            <tr>
-                                <td class="popup__title">location :</td>
-                                <td class="popup__title"> Calicut </td>
-                            </tr>
-                            <tr>
-                                <td class="popup__title">Object type :</td>
-                                <td class="popup__title"> Interior design </td>
-                            </tr>
-                            <tr>
-                                <td class="popup__title">Area :</td>
-                                <td class="popup__title"> 2 690.978 ft2 </td>
-                            </tr>
-                            <tr>
-                                <td class="popup__title">Term of works : </td>
-                                <td class="popup__title"> 2 months </td>
-                            </tr>
-                            <tr>
-                                <td class="popup__title"> Budget: </td>
-                                <td class="popup__title"> $450 / ft2 </td>
-                            </tr>
-                        </table> -->
-
-
-                <!-- </div> -->
+               
             </div>
-        </div>
+        </div> -->
 
         </div>
         <!-- ---------nav-bar---------- -->
@@ -723,6 +687,10 @@
         let sections = document.querySelectorAll("section")
         let navLi = document.querySelectorAll(".navigation__link")
 
+        const hederElement = document.getElementById("home");
+        const navbarElement = document.getElementById("navbar");
+
+
         window.onscroll = () => {
             var current = "";
 
@@ -740,7 +708,7 @@
                         }
                     });
                 }
-                if (window.pageYOffset < 700) {
+                if (window.pageYOffset < (hederElement.offsetHeight - navbarElement.offsetHeight)) {
                     navLi.forEach((li) => {
                         li.classList.remove("active");
                     });

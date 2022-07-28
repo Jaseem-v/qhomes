@@ -308,7 +308,7 @@
     &:hover {
       .projects {
         &__info {
-          bottom: 0;
+          bottom: 0 !important;
         }
 
         // &__img-container {
@@ -407,7 +407,7 @@
   &__btn {
     color: #82b440;
     font-size: 20px;
-    
+
     @media only screen and (max-width: $bp-xsmall) {
       color: #fff;
     }
@@ -449,6 +449,7 @@
   &__outer {
     // padding: 2.5rem 1.5rem;
     margin-bottom: 2rem;
+    bottom: 0 !important;
   }
 
   // &__head-bar {

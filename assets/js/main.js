@@ -210,23 +210,47 @@ $(document).ready(function () {
 
 // //////////////////
 //GALLERY
+
+const info = document.querySelectorAll(".projects__info");
+const projectBtns = document.querySelectorAll(".projects__btn");
+let clickedBtn;
+
+projectBtns.forEach(el => {
+    el.addEventListener("click", () => {
+        clickedBtn = el.closest(".projects__info")
+
+        console.log(clickedBtn);
+    })
+})
 $('.projects__btn').magnificPopup({
     type: 'image',
     gallery: {
         enabled: true
+    },
+    callbacks: {
+        open: function () {
+            $.magnificPopup.instance.close = function () {
+                $.magnificPopup.proto.close.call(this);
+                clickedBtn.style.bottom = "0rem"
+                setTimeout(() => {
+                    clickedBtn.style.bottom = "-6rem"
+                }, 200)
+            };
+
+        }
     }
 })
 
-//////////////////////////
-// project
+// //////////////////////////
+// // project
 
-const projectBtn = document.querySelectorAll(".projects__single-item")
+// const projectBtn = document.querySelectorAll(".projects__single-item")
 
-projectBtn.forEach((btn) => {
-    btn.addEventListener("click", (el) => {
-        let projectInfo = el.target.closest(".projects__outer");
+// projectBtn.forEach((btn) => {
+//     btn.addEventListener("click", (el) => {
+//         let projectInfo = el.target.closest(".projects__outer");
 
-        console.log(projectInfo.style);
-        projectInfo.style.bottom = "-6rem"
-    })
-})
+//         console.log(projectInfo.style);
+//         projectInfo.style.bottom = "-6rem"
+//     })
+// })
